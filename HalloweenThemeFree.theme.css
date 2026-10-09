@@ -1,0 +1,352 @@
+/**
+
+* @name HALLOWEEN THEME FREE
+* @description Haunted Harvest
+* @author Livio
+* @version 1.0.0
+  */
+
+body {
+background-color: #100815 !important;
+}
+  
+
+ ==========================================
+🎃 HALLOWEEN THEME FREE
+Haunted Harvest — Purple × Pumpkin Orange
+========================================== 
+
+ Import the original Discord dark foundation 
+@import url('httpsfonts.googleapis.comcss2family=Interwght@400;500;600;700;800&display=swap');
+
+ ---------- THEME VARIABLES ---------- 
+
+root {
+--hh-bg #0d0912;
+--hh-bg-secondary #140e1b;
+--hh-panel #1c1325;
+--hh-panel-hover #281831;
+
+```
+--hh-purple #a855f7;
+--hh-purple-light #d8a4ff;
+--hh-orange #ff7518;
+--hh-orange-light #ffad42;
+--hh-red #ff3c55;
+
+--hh-text #f4eaff;
+--hh-muted #a99bb7;
+
+--hh-border rgba(168, 85, 247, .30);
+--hh-glow 0 0 12px rgba(168, 85, 247, .22);
+--hh-orange-glow 0 0 12px rgba(255, 117, 24, .22);
+
+--darkplus-bg var(--hh-bg);
+--darkplus-bg2 var(--hh-panel);
+--darkplus-sec var(--hh-orange);
+--darkplus-links var(--hh-purple-light);
+
+--darkplus-home-icon url('httpsi.imgur.comRvlNQ7k.png');
+
+--watermark-filter-invert 0%;
+--watermark-filter-sepia 100%;
+--watermark-filter-saturate 3000%;
+--watermark-filter-hue-rotate 270deg;
+--watermark-filter-brightness 100%;
+--watermark-filter-contrast 120%;
+```
+
+}
+
+ ---------- GLOBAL APPEARANCE ---------- 
+
+body,
+html {
+background var(--hh-bg) !important;
+}
+
+ {
+  scrollbar-color #7136a0 #100b16;
+  scrollbar-width thin;
+  }
+
+selection {
+background rgba(168, 85, 247, .55);
+color white;
+}
+
+ ---------- SERVER SIDEBAR ---------- 
+
+[class=guilds] {
+background #0a0710 !important;
+border-right 1px solid var(--hh-border);
+}
+
+[class=guilds] [class=wrapper] {
+transition transform .2s ease, filter .2s ease;
+}
+
+[class=guilds] [class=wrapper]hover {
+filter drop-shadow(0 0 7px var(--hh-orange));
+}
+
+[class=guilds] [class=selected] [class=childWrapper],
+[class=guilds] [class=selected] [class=icon] {
+background linear-gradient(135deg, var(--hh-purple), var(--hh-orange)) !important;
+box-shadow 0 0 14px rgba(255, 117, 24, .3);
+border-radius 16px !important;
+}
+
+ ---------- DISCORD HOME ICON ---------- 
+
+ Purple and orange haunted glow 
+[class=guilds] [class=tutorialContainer] [class=childWrapper] {
+background linear-gradient(145deg, #311347, #ff7518) !important;
+border 1px solid rgba(255, 173, 66, .75);
+box-shadow 0 0 15px rgba(168, 85, 247, .5);
+border-radius 16px !important;
+transition .25s ease;
+}
+
+[class=guilds] [class=tutorialContainer]hover [class=childWrapper] {
+box-shadow 0 0 24px rgba(255, 117, 24, .65);
+transform scale(1.05);
+}
+
+ ---------- TOP BAR ---------- 
+
+[class=titleBar] {
+background #100a16 !important;
+border-bottom 1px solid var(--hh-border);
+}
+
+[class=titleBar]after {
+content 🎃 HALLOWEEN THEME FREE 🦇;
+position absolute;
+left 76px;
+top 50%;
+transform translateY(-50%);
+font-family Inter, sans-serif;
+font-weight 800;
+font-size 12px;
+letter-spacing 1px;
+background linear-gradient(90deg, var(--hh-orange), var(--hh-purple-light));
+-webkit-background-clip text;
+background-clip text;
+color transparent;
+pointer-events none;
+}
+
+ ---------- MAIN PANELS ---------- 
+
+[class=sidebar],
+[class=privateChannels],
+[class=panels] {
+background var(--hh-bg-secondary) !important;
+}
+
+[class=chat],
+[class=chatContent] {
+background-color var(--hh-bg) !important;
+}
+
+ ---------- CHANNEL LIST ---------- 
+
+[class=channel],
+[class=containerDefault] {
+border-radius 7px;
+transition background .2s ease;
+}
+
+[class=channel]hover {
+background var(--hh-panel-hover) !important;
+}
+
+[class=modeSelected] [class=name],
+[class=channel][class=selected] [class=name] {
+color var(--hh-orange) !important;
+text-shadow 0 0 8px rgba(255, 117, 24, .2);
+}
+
+ ---------- FRIENDS & DM LIST ---------- 
+
+[class=privateChannels] [class=channel]hover,
+[class=privateChannels] [class=interactive]hover {
+background var(--hh-panel-hover) !important;
+}
+
+[class=privateChannels] [class=selected] {
+background linear-gradient(
+90deg,
+rgba(168, 85, 247, .22),
+rgba(255, 117, 24, .08)
+) !important;
+border-left 2px solid var(--hh-orange);
+}
+
+ ---------- MESSAGE BUBBLES ---------- 
+
+[class=message] {
+transition background .18s ease;
+}
+
+[class=message]hover {
+background rgba(168, 85, 247, .045) !important;
+}
+
+[class=mentioned] {
+background rgba(255, 117, 24, .09) !important;
+border-left 3px solid var(--hh-orange) !important;
+}
+
+[class=mentioned]hover {
+background rgba(255, 117, 24, .14) !important;
+}
+
+ ---------- MESSAGE INPUT ---------- 
+
+[class=channelTextArea] {
+background #181020 !important;
+border 1px solid var(--hh-border) !important;
+border-radius 14px !important;
+transition border-color .2s ease, box-shadow .2s ease;
+}
+
+[class=channelTextArea]focus-within {
+border-color var(--hh-purple) !important;
+box-shadow 0 0 14px rgba(168, 85, 247, .16);
+}
+
+[class=placeholder] {
+color var(--hh-muted) !important;
+}
+
+ ---------- BUTTONS ---------- 
+
+button {
+transition filter .2s ease, transform .2s ease;
+}
+
+buttonhover {
+filter brightness(1.15);
+}
+
+[class=lookFilled][class=colorBrand] {
+background linear-gradient(135deg, #8b35d6, #b44bff) !important;
+}
+
+[class=lookFilled][class=colorBrand]hover {
+background linear-gradient(135deg, #a64af2, #d16cff) !important;
+}
+
+ ---------- LINKS ---------- 
+
+a,
+[class=anchor] {
+color var(--hh-purple-light) !important;
+}
+
+ahover,
+[class=anchor]hover {
+color var(--hh-orange-light) !important;
+}
+
+ ---------- MEMBERS LIST ---------- 
+
+[class=members],
+[class=member] {
+background transparent !important;
+}
+
+[class=member]hover [class=name] {
+color var(--hh-orange-light) !important;
+}
+
+[class=membersWrap] {
+border-left 1px solid rgba(168, 85, 247, .12);
+}
+
+ ---------- VOICE PANELS ---------- 
+
+[class=voice] [class=container],
+[class=connection] {
+border-color var(--hh-border) !important;
+}
+
+[class=rtcConnectionStatusConnected] {
+color #57e389 !important;
+}
+
+ ---------- SCROLLBARS ---------- 
+
+-webkit-scrollbar {
+width 7px !important;
+}
+
+-webkit-scrollbar-track {
+background #100b16 !important;
+}
+
+-webkit-scrollbar-thumb {
+background linear-gradient(
+180deg,
+var(--hh-purple),
+var(--hh-orange)
+) !important;
+border-radius 8px;
+}
+
+ ---------- PROFILE POPOUTS ---------- 
+
+[class=userPopout],
+[class=userProfileModal] {
+background #160e20 !important;
+border 1px solid var(--hh-border) !important;
+box-shadow var(--hh-glow) !important;
+}
+
+ ---------- PANELS & CARDS ---------- 
+
+[class=card],
+[class=section] {
+border-color var(--hh-border);
+}
+
+ ---------- SUBTLE HAUNTED ATMOSPHERE ---------- 
+
+[class=chatContent]after {
+content ;
+position absolute;
+inset 0;
+pointer-events none;
+z-index 0;
+background
+radial-gradient(
+ellipse at 0% 100%,
+rgba(168, 85, 247, .055),
+transparent 40%
+),
+radial-gradient(
+ellipse at 100% 0%,
+rgba(255, 117, 24, .045),
+transparent 35%
+);
+}
+
+ ---------- DATE DIVIDERS ---------- 
+
+[class=divider] [class=content] {
+color var(--hh-orange-light) !important;
+font-weight 700;
+}
+
+ ---------- REDUCED MOTION SUPPORT ---------- 
+
+@media (prefers-reduced-motion reduce) {
+,
+before,
+after {
+animation none !important;
+transition none !important;
+}
+}
